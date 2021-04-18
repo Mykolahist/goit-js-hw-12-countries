@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 22px;
+
+  background-color: cornsilk;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 35px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+input {
+  width: 100%;
+  margin: 20px 0;
+  padding-left: 10px;
+
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  line-height: 2;
+
+  @media screen and (min-width: 768px) {
+    width: 40%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 40%;
+  }
+}
+
+input::placeholder {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+}
+
+.card-container {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.flag-container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.info-container {
+  text-align: start;
+  min-width: 50%;
+}
+
+.country-name {
+  text-align: center;
+  margin: 0 0 20px 0;
+
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.country-info {
+  list-style: none;
+
+  & > li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.languages-list {
+  padding-left: 30px;
+  list-style-type: disc;
+
+  & > li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  & > li:first-child {
+    margin-top: 8px;
+  }
+}
+
+.country-list {
+  padding-left: 30px;
+  list-style-type: disc;
+  text-align: start;
+
+  & > li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.accent {
+  font-weight: 700;
+}
